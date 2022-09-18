@@ -1,30 +1,40 @@
-Alex Pocernich<br>
-6:00pm-8:00pm Mon-Fri<br>
-<br>
------------------------------1<br>
-For employees<br>
-who have a list of daily activites that reoccur everyday.<br>
-Daily Todo<br>
-is a task tracking app that resets each day and lets you check off tasks everyday before resetting at a specific time.<br>
-unlike ClickUp<br>
-our product is designed for repetative tasks that occur daily or hourly.<br>
-https://zapier.com/blog/best-todo-list-apps/#todoist<br>
-<br>
------------------------------2<br>
-For team managers that run events<br>
-Who operate in a multi team operation or events<br>
-Team Roster<br>
-is an app that allows you to assign team members and team responsibilities and allow others access without editing privilages.<br>
-unlike microsoft excell<br> 
-this is a purpose built software that will allow tracking of responsibilities and interaction to complete a project.<br>
-(I chose excell for this because we use it in my current company for this purpose.) https://www.microsoft.com/en-us/microsoft-365/excel<br>
-<br>
------------------------------3<br>
-For work from home employees<br>
-who are easily distracted or struggle to stay on task<br>
-Web Lock<br>
-is an app that either prevents opening new tabs/webpages while the lock in on or interupts the act of opening new tabs.<br>
-unlike Isolator<br>
-this app will work on windows and interupts distractions<br>
-https://www.willmore.eu/software/isolator/<br>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="index.css"/>
+  <title>Color Picker</title>
+</head>
+<body>
+  <div id="container">
+  <h1 id="header">Color Converter</h1>
+  <form id="inputRGBtopyBLArray" onsubmit="inputRGBtopyBLArray()">
+    <label id="colorInputRGB">Convert RGB to pyBL:</label>
+    <label id="labelR">R:</label>
+    <input type="text" id="colorR" name="colorR"/>
+    <label id="labelG">G:</label>
+    <input type="text" id="colorG" name="colorG"/>
+    <label id="labelrgbB">B:</label>
+    <input type="text" id="colorrgbB" name="colorrgbB"/>
+    <button id="RGBButton" type="button" value="Submit" onclick="inputRGBtopyBLArray()">Submit</button>
+  </form>
+    <form id="inputpyBLtoRGBArray" onsubmit="inputpyBLtoRGBArray()">
+      <label id="colorInputpyBL">Convert pyBL to RGB:</label>
+      <label id="labelp">p:</label>
+      <input type="text" id="colorp" name="colorp"/>
+      <label id="labely">y:</label>
+      <input type="text" id="colory" name="colory"/>
+      <label id="labelpyB">B:</label>
+      <input type="text" id="colorpyB" name="colorpyB"/>
+      <label id="labelL">L:</label>
+      <input type="text" id="colorL" name="colorL"/>
+      <button id="pyBLButton" type="button" value="Submit" onclick="inputpyBLtoRGBArray()">Submit</button>
+    </form>
+    <div id="outputLabel">output:</div>
+    <div id="output"></div>
+  </div>
+</body>
+</html>
